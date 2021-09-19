@@ -1,5 +1,5 @@
 FROM pandoc/latex:latest
 
-RUN tlmgr update --self && tlmgr install sectsty lastpage helvetic
+RUN tlmgr update --self && tlmgr install tikzsymbols
 
 ENTRYPOINT ["pdflatex"]
